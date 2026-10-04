@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Ramirez | Operations Portfolio</title>
+    <meta name="description" content="Operations case studies: last-mile dispatch recovery ($5,725 in cargo, 100% same-day delivery) and a 600+ record customs audit.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sebastian Ramirez | Operations Portfolio">
+    <meta property="og:description" content="Operations case studies: last-mile dispatch recovery ($5,725 in cargo, 100% same-day delivery) and a 600+ record customs audit.">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:url" content="https://sebastianramirezz.github.io/">
+    <link rel="canonical" href="https://sebastianramirezz.github.io/">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2B2F2D;
+            background: linear-gradient(135deg, #F4F6F4 0%, #D5E0D9 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #143F2F 0%, #1E5E43 100%);
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .header .title {
+            font-size: 1.3em;
+            color: #E8F2EC;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            font-size: 0.95em;
+        }
+        
+        .contact-info a {
+            color: #E8F2EC;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(232, 242, 236, 0.5);
+            transition: all 0.3s;
+        }
+        
+        .contact-info a:hover {
+            color: #fff;
+            border-bottom-color: white;
+        }
+        
+        .main-content {
+            padding: 50px 40px;
+        }
+        
+        .case-study {
+            margin-bottom: 50px;
+            border-left: 5px solid #1E5E43;
+            padding-left: 30px;
+            page-break-inside: avoid;
+        }
+        
+        .case-study:last-child {
+            margin-bottom: 0;
+        }
+        
+        .case-study h2 {
+            font-size: 1.8em;
+            color: #143F2F;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        
+        .case-study-label {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .case-study h3 {
+            font-size: 1.2em;
+            color: #1E5E43;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .case-study h3:first-of-type {
+            margin-top: 0;
+        }
+        
+        .case-study p {
+            text-align: justify;
+            margin-bottom: 15px;
+            line-height: 1.7;
+            font-size: 1em;
+        }
+        
+        .results-list {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin: 15px 0;
+            border-left: 4px solid #B7791F;
+        }
+        
+        .results-list h4 {
+            color: #9A6416;
+            margin-bottom: 12px;
+            font-size: 1.05em;
+        }
+        
+        .results-list ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .results-list li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .results-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #B7791F;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .metric {
+            display: inline-block;
+            background: #1E5E43;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin: 5px 5px 5px 0;
+            font-size: 0.95em;
+        }
+        
+        .intervention {
+            background: #F1F6F3;
+            padding: 20px 25px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #1E5E43;
+        }
+        
+        .intervention h4 {
+            color: #1E5E43;
+            margin-bottom: 12px;
+            font-size: 1.05em;
+        }
+        
+        .intervention p {
+            text-align: justify;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .intervention p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 30px 40px;
+            text-align: center;
+            border-top: 1px solid #ecf0f1;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        
+        .footer p {
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .header .title {
+                font-size: 1.1em;
+            }
+            
+            .main-content {
+                padding: 30px 20px;
+            }
+            
+            .case-study {
+                padding-left: 20px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .contact-info span {
+                display: block;
+            }
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+            <h1>SEBASTIAN RAMIREZ NAVARRETE</h1>
+            <div class="title">Operations & Logistics Specialist</div>
+            <div class="title" style="font-size: 1.1em; color: #D2E6DA; margin-top: 15px;">
+                Data Control | Delay Resolution | Process Management
+            </div>
+            <div class="contact-info">
+                <span>📧 <a href="mailto:ramireznavarretesebastian@gmail.com">ramireznavarretesebastian@gmail.com</a></span>
+                <span>📱 <a href="tel:+593979696203">+593 97 969 6203</a></span>
+                <span>💼 <a href="https://www.linkedin.com/in/sebastian-ramirez-navarrete" target="_blank">LinkedIn Profile</a></span>
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            
+            <!-- CASE STUDY 1 -->
+            <div class="case-study" id="case-1">
+                <div class="case-study-label">📦 Case Study 1</div>
+                <h2>Last-Mile Coordination & Delay Mitigation</h2>
+                
+                <h3>The Operational Challenge</h3>
+                <p>A cross-scheduling error threatened to paralyze the delivery of critical goods (sugar bales, rice quintals, and oil boxes) valued at <strong>$5,725.00</strong>. The original plan collapsed the expected delivery times for a multi-destination corridor (Guayaquil → Chongón → Playas → Salinas), jeopardizing customer satisfaction and requiring immediate, self-directed action.</p>
+                
+                <div class="intervention">
+                    <h4>🎯 Intervention & Execution</h4>
+                    
+                    <p><strong>Vendor and Documentation Management:</strong><br>
+                    Autonomously coordinated an emergency solution, redirecting the cargo to an external logistics provider to segment the operation into simultaneous routes.</p>
+                    
+                    <p><strong>Cost Optimization & Control:</strong><br>
+                    Negotiated directly with the provider to reduce the contingency rate from $500 to $350, protecting the operation's budget without compromising established timelines.</p>
+                    
+                    <p><strong>Quality Assurance & Communication:</strong><br>
+                    Faced with the vendor's requirement to use their own delivery personnel, I structured a plan incorporating an internal stevedore to ensure a seamless transition and maintain total end-customer trust.</p>
+                </div>
+                
+                <div class="results-list">
+                    <h4>✨ Measurable Impact & Results</h4>
+                    <ul>
+                        <li><strong>Service Level (OTD):</strong> 100% on-time delivery before 7:00 PM on the same day</li>
+                        <li><strong>Budget Efficiency:</strong> 30% savings on unforeseen freight costs ($150 reduction)</li>
+                        <li><strong>Risk Mitigation:</strong> Zero returns or penalties on the $5,725.00 billed</li>
+                        <li><strong>Operational:</strong> Maintained customer confidence across 4-destination route</li>
+                    </ul>
+                </div>
+                
+                <div style="margin-top: 15px;">
+                    <span class="metric">100% On-Time Delivery</span>
+                    <span class="metric">$350 Negotiated Cost</span>
+                    <span class="metric">30% Budget Savings</span>
+                    <span class="metric">Zero Service Penalties</span>
+                </div>
+            </div>
+
+            <!-- CASE STUDY 2 -->
+            <div class="case-study" id="case-2">
+                <div class="case-study-label">📊 Case Study 2</div>
+                <h2>Data Audit, Systems & Traceability Control</h2>
+                
+                <h3>The Operational Challenge</h3>
+                <p>In an environment requiring strict administrative control, a massive audit of physical and electronic inventories was necessary across three Temporary Customs Warehouses (Intercarga, Cargoservice, and TCE Consumo). The process involved detecting data discrepancies between current platforms (ECUAPASS) and obsolete records from the previous system (SICE), creating a documentation bottleneck and database inconsistencies.</p>
+                
+                <div class="intervention">
+                    <h4>🎯 Intervention & Execution</h4>
+                    
+                    <p><strong>Systems & Data Management:</strong><br>
+                    Conducted the review, cross-referencing, and updating of massive data sets across multiple systems and official communication channels (Quipux and emails).</p>
+                    
+                    <p><strong>Issue Tracking & Escalation:</strong><br>
+                    Executed rigorous control with up to three rounds of formal requests to demand answers and escalate missing information or incomplete files to the warehouses.</p>
+                    
+                    <p><strong>Detailed Documentary Research:</strong><br>
+                    In the absence of digital traceability in older archives, I independently led a manual search through physical paper files to match and correct historical records.</p>
+                </div>
+                
+                <div class="results-list">
+                    <h4>✨ Measurable Impact & Results</h4>
+                    <ul>
+                        <li><strong>Volume of Data Managed:</strong> 600–900 total MRN records processed (200–300 per warehouse)</li>
+                        <li><strong>Time Efficiency:</strong> Completed entire audit within strict 3-week timeline</li>
+                        <li><strong>Discrepancies Found:</strong> 20 critical non-compliance discrepancies identified across 600+ records</li>
+                        <li><strong>Regulatory Compliance:</strong> Corrective actions implemented; warehouse sanctions assessed</li>
+                        <li><strong>Concurrent Operations:</strong> Completed while maintaining daily administrative duties</li>
+                    </ul>
+                </div>
+                
+                <div style="margin-top: 15px;">
+                    <span class="metric">600–900 Records Audited</span>
+                    <span class="metric">21 Days Completion</span>
+                    <span class="metric">20 Discrepancies Found</span>
+                    <span class="metric">3 Warehouse Sites</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p><strong>Bilingual Operations Professional | C2 English | Guayaquil, Ecuador</strong></p>
+            <p style="margin-top: 15px; font-size: 0.85em; color: #95a5a6;">
+                Portfolio compiled with verified metrics and real-world operational case studies
+            </p>
+        </div>
+    </div>
+</body>
+</html>
